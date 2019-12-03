@@ -17,13 +17,23 @@
 
 <main>
 <h2>Practice</h2>
+
+<!-- preで囲むと吐き出されたデータが改行された状態で表示されるので見やすいのです。 -->
 <pre>
 <!-- ここにプログラムを記述します -->
 
+
+<!-- ///date/// -->
 <?php 
-///date///
 date_default_timezone_set('Asia/Tokyo');
 echo (date('Y年m月d日 H時i分s秒'));
+?>
+<br>
+<!-- ///date２/// -->
+<?php 
+$today = new DateTime();
+//datetime オブジェクトの中にformat等のメソッドが入っている
+echo($today->format('H時i分s秒'));
 ?>
 </pre>
 </main>
