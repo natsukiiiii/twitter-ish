@@ -35,6 +35,39 @@ $today = new DateTime();
 //datetime オブジェクトの中にformat等のメソッドが入っている
 echo($today->format('H時i分s秒'));
 ?>
+
+<!-- 繰り返し処理 -->
+<?php
+$i = 1;
+echo($i . "\n");
+
+$i = $i+1;
+echo($i . "\n");
+?>
+
+<?php
+$i = 1;
+while ($i <= 5){
+    echo($i . "\n");
+    $i = $i + 1;
+}
+?>
+
+<?php
+for($i=1; $i<=5; $i++){
+  echo($i . "\n");
+}
+?>
+<!-- 365日分の日付出力 -->
+<?php
+for($i=1; $i<=365;$i++){
+  echo(date('m/d(D)' ,strtotime('+' . $i .'day')));
+  echo "\n";
+};
+?>
+
+
+
 </pre>
 </main>
 </body>    
