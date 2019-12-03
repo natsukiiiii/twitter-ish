@@ -19,7 +19,10 @@
 <h2>Practice</h2>
 <pre>
 <!-- ここにプログラムを記述します -->
+
 <?php 
+///date///
+date_default_timezone_set('Asia/Tokyo');
 echo (date('Y年m月d日 H時i分s秒'));
 ?>
 </pre>
