@@ -60,12 +60,20 @@ for($i=1; $i<=5; $i++){
 ?>
 <!-- 365日分の日付出力 -->
 <?php
-for($i=1; $i<=365;$i++){
+for($i=1; $i<=5;$i++){
   echo(date('m/d(D)' ,strtotime('+' . $i .'day')));
   echo "\n";
 };
 ?>
 
+<?php
+$week_name = ['日','月','火','水','木','金','土'];
+echo ($week_name[date('w')]);
+
+foreach($week_name as $week){
+    echo($week . "\n");
+}
+?>
 
 
 
