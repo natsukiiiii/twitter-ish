@@ -75,7 +75,28 @@ foreach($week_name as $week){
 }
 ?>
 
+<?php
+if(date('G') < 14){
+echo('※現在受付時間外です');
+}else{
+  if(date('G') >= 14){
+    echo('※ようこそ');
+  }
+}
+?>
 
+
+<?php
+$x = 'abc';
+if ($x !== ''){
+  echo('xには文字が入っています');
+}
+?>
+
+<?php
+$data = sprintf('%04d年 %02d月 %2d日', 2018, 12, 5, 'fri');
+echo ($data);
+?>
 
 </pre>
 </main>
