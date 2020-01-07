@@ -17,9 +17,11 @@
 
 <main>
 <h2>Practice</h2>
-<pre>
-<!-- ここにプログラムを記述します -->
-</pre>
+<form action="input_do.php" method="post">
+<textarea name="memo" id="" cols="50" rows="10" placeholder="please write down freely"></textarea><br>
+<button type="submit">register</button>
+</form>
+
 </main>
 </body>    
 </html>

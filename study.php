@@ -98,6 +98,8 @@ $data = sprintf('%04d年 %02d月 %2d日', 2018, 12, 5, 'fri');
 echo ($data);
 ?>
 
+
+
 </pre>
 </main>
 </body>    
